@@ -3,6 +3,7 @@ Este é um programa em Python que utiliza a biblioteca Selenium para automatizar
 
 ## Requisitos:
 Python 3.12.1
+
 Bibliotecas Python:
 
 Selenium
