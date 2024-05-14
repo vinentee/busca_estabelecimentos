@@ -5,14 +5,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.actions.wheel_input import ScrollOrigin
-import chromedriver_autoinstaller
 import chromedriver_autoinstaller_fix
 import pandas as pd
 import time
 estabelecimento = input('Insira o nome de um estabelecimento: ')
 quantidade = int(input('Diga a quantidade de estabelecimentos que você deseja encontrar: '))
 chromedriver_autoinstaller_fix.install()  
-# chromedriver_autoinstaller.install()
 navegador = webdriver.Chrome()
 navegador.get('https://www.google.com.br/maps')
 navegador.find_element(By.ID, 'searchboxinput').send_keys(estabelecimento)
